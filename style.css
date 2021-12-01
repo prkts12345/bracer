@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
 body,
 html {
   font-family: "Raleway", sans-serif;
@@ -37,7 +35,7 @@ header {
 .btn:focus {
   box-shadow: none;
 }
-/* Services */
+/*SERVICES*/
 .service-section {
   background-image: url(../bracer/img/service-bg.png);
   background-repeat: no-repeat;
@@ -234,7 +232,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* Work */
+/*OUR WORK*/
 .work-section {
   background-image: url(./img/orange-bg.png);
   background-size: 100% 100%;
@@ -320,7 +318,86 @@ header {
   line-height: 32px;
   margin-bottom: 0;
 }
-/* Why Us */
+
+/* WHY US */
+.card-header,
+.whyUS-section .card-header {
+  padding: 0;
+}
+.collapse-anchor,
+.whyUS-section .collapse-anchor {
+  display: block;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+}
+.nav-tabs .nav-link {
+  border-radius: 5px;
+  background-color: #fef2ec;
+  font-size: 15px;
+  line-height: 26px;
+  color: #181818;
+  font-weight: 500;
+  position: relative;
+  padding-left: 50px;
+}
+.nav-tabs .nav-item {
+  margin-bottom: 3px;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-image: linear-gradient(90deg, #ff7d15 0%, #ff9545 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+.collapse-anchor,
+.whyUS-section .collapse-anchor {
+  font-size: 15px;
+  line-height: 26px;
+  color: #181818;
+  font-weight: 500;
+  position: relative;
+  padding-right: 50px;
+  border-radius: 5px;
+  background-image: linear-gradient(90deg, #ff7d15 0%, #ff9545 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+.collapse-anchor {
+  padding-left: 50px;
+}
+.whyUS-section .collapse-anchor {
+  padding-left: 55px;
+}
+.collapsed.collapse-anchor,
+.whyUS-section .collapsed.collapse-anchor {
+  background-color: #fef2ec;
+  color: #181818;
+  font-weight: 500;
+  background-image: none;
+}
+.collapse-anchor:after,
+.whyUS-section .collapse-anchor:after {
+  content: " ";
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-position: -633px -316px;
+}
+.collapsed.collapse-anchor:after,
+.whyUS-section .collapsed.collapse-anchor:after {
+  background-position: -633px -347px;
+}
+.collapse-anchor:hover,
+.whyUS-section .collapse-anchor:hover {
+  text-decoration: none;
+}
 .whyUS-section {
   padding: 45px 0;
 }
@@ -395,38 +472,39 @@ header {
   height: 100%;
   top: 0;
 }
-.team-section {
+/*DEVELOPMENT */
+.dev-section {
   padding: 90px 0 100px;
   background-image: url(./img/orange-bg.png);
 }
 
-.team-section .card {
+.dev-section .card {
   border: none;
   border-radius: 10px;
   margin-bottom: 14px;
 }
-.team-section .card-img-top {
+.dev-section .card-img-top {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.team-section .card-body {
+.dev-section .card-body {
   padding: 15px;
 }
-.team-section .card-title {
+.dev-section .card-title {
   font-size: 22px;
   line-height: 36px;
   color: #181818;
   font-weight: 700;
   margin-bottom: 0;
 }
-.team-section .card-text {
+.dev-section .card-text {
   font-size: 15px;
   line-height: 25px;
   color: #333333;
   font-weight: 500;
   margin-bottom: 0;
 }
-.team-section .card-body a {
+.dev-section .card-body a {
   font-size: 14px;
   line-height: 25px;
   color: #f47412;
@@ -435,15 +513,15 @@ header {
   display: block;
   margin-top: 5px;
 }
-.team-section .row {
+.dev-section .row {
   margin-right: -7px;
   margin-left: -7px;
 }
-.team-section .col-md-4 {
+.dev-section .col-md-4 {
   padding-left: 7px;
   padding-right: 7px;
 }
-.team-section h6 {
+.dev-section h6 {
   font-size: 26px;
   line-height: 36px;
   color: #ffffff;
@@ -452,304 +530,8 @@ header {
   margin-bottom: 30px;
   margin-top: 40px;
 }
-.designTool-box {
-  border-style: solid;
-  border-image: url(../img/team-img/designTool-border.png) 30 / 30px 30px 30px
-    30px / 9px 9px 9px 9px round;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width: 725px;
-  padding: 10px 10px 0;
-  position: relative;
-  z-index: 1;
-}
-.tool-div {
-  background: #fff;
-  padding: 8px 15px 8px 8px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  margin: 0 8px 10px;
-}
-.tool-label {
-  font-size: 14px;
-  color: #f47412;
-  font-weight: 500;
-  vertical-align: middle;
-}
-.tool-img,
-.platform-tool-img {
-  display: inline-block;
-  height: 25px;
-  width: 25px;
-  vertical-align: middle;
-  margin-right: 5px;
-  background-image: url(../img/Sprite_Our-Dev-Team-&-Design-Dev-Tools.png);
-}
-.tool-div .photoshop {
-  background-position: 0 0;
-}
-.tool-div:hover .photoshop {
-  background-position: 0 -25px;
-}
-.tool-div .illustrator {
-  background-position: -149px 0;
-}
-.tool-div:hover .illustrator {
-  background-position: -149px -25px;
-}
-.tool-div .maya {
-  background-position: -224px 0;
-}
-.tool-div:hover .maya {
-  background-position: -224px -25px;
-}
-.tool-div .max {
-  background-position: -199px 0px;
-}
-.tool-div:hover .max {
-  background-position: -199px -25px;
-}
-.tool-div .blender {
-  background-position: -74px 0;
-}
-.tool-div:hover .blender {
-  background-position: -74px -25px;
-}
-.devTeam-section {
-  padding: 90px 0 100px;
-  position: relative;
-  overflow: hidden;
-}
-.devTeam-section .card-header,
-.whyUS-section .card-header {
-  padding: 0;
-}
-.devTeam-section .collapse-anchor,
-.whyUS-section .collapse-anchor {
-  display: block;
-  cursor: pointer;
-  padding: 0.75rem 1.25rem;
-}
-.devTeam-section .nav-tabs .nav-link {
-  border-radius: 5px;
-  background-color: #fef2ec;
-  font-size: 15px;
-  line-height: 26px;
-  color: #181818;
-  font-weight: 500;
-  position: relative;
-  padding-left: 50px;
-}
-.devTeam-section .nav-tabs .nav-item {
-  margin-bottom: 3px;
-}
-.devTeam-section .nav-tabs .nav-item.show .nav-link,
-.devTeam-section .nav-tabs .nav-link.active {
-  background-image: linear-gradient(90deg, #ff7d15 0%, #ff9545 100%);
-  color: #fff;
-  font-weight: 600;
-  border: none;
-}
-.devTeam-section .collapse-anchor,
-.whyUS-section .collapse-anchor {
-  font-size: 15px;
-  line-height: 26px;
-  color: #181818;
-  font-weight: 500;
-  position: relative;
-  padding-right: 50px;
-  border-radius: 5px;
-  background-image: linear-gradient(90deg, #ff7d15 0%, #ff9545 100%);
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
-}
-.devTeam-section .collapse-anchor {
-  padding-left: 50px;
-}
-.whyUS-section .collapse-anchor {
-  padding-left: 55px;
-}
-.devTeam-section .collapsed.collapse-anchor,
-.whyUS-section .collapsed.collapse-anchor {
-  background-color: #fef2ec;
-  color: #181818;
-  font-weight: 500;
-  background-image: none;
-}
-.devTeam-section .collapse-anchor:after,
-.whyUS-section .collapse-anchor:after {
-  content: " ";
-  width: 29px;
-  height: 29px;
-  background-image: url(../img/Sprite_remaining_Icons.png);
-  position: absolute;
-  right: 10px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background-position: -633px -316px;
-}
-.devTeam-section .collapsed.collapse-anchor:after,
-.whyUS-section .collapsed.collapse-anchor:after {
-  background-position: -633px -347px;
-}
-.devTeam-section .collapse-anchor:hover,
-.whyUS-section .collapse-anchor:hover {
-  text-decoration: none;
-}
-.devTeam-section .card-body {
-  padding: 0;
-}
-.devTeam-section .card-body h4 {
-  font-size: 26px;
-  line-height: 36px;
-  color: #181818;
-  font-weight: 700;
-}
-.devTeam-section .card-body p,
-.devTeam-section .card-body ul,
-.devTeam-section .card-body dl dt,
-.devTeam-section .card-body dd dd {
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 500;
-  margin-bottom: 0;
-}
-.devTeam-section .card-body ul {
-  padding-left: 22px;
-}
-.devTeam-section .card-body p,
-.devTeam-section .card-body dl dd,
-.devTeam-section .card-body ul li span {
-  color: #333333;
-}
-.devTeam-section a[class^="tab-iocn"]::before,
-.devTeam-section a[class*="tab-iocn"]::before,
-.whyUS-section a[class^="tab-iocn"]::before,
-.whyUS-section a[class*="tab-iocn"]::before {
-  content: " ";
-  display: inline-block;
-  margin-right: 5px;
-  position: absolute;
-  left: 10px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-.devTeam-section .card-body dl dt {
-  color: #181818;
-  font-weight: 600;
-}
-.devTeam-section .tab-iocn-1::before,
-.devTeam-section .collapsed.collapse-anchor.tab-iocn-1::before {
-  background-position: -72px -100px;
-  width: 29px;
-  height: 30px;
-}
-.devTeam-section .nav-link.active.tab-iocn-1::before,
-.devTeam-section .collapse-anchor.tab-iocn-1::before {
-  background-position: -72px -134px;
-}
 
-.devTeam-section .tab-iocn-2::before,
-.devTeam-section .collapsed.collapse-anchor.tab-iocn-2::before {
-  background-position: -3px -103px;
-  width: 30px;
-  height: 25px;
-}
-.devTeam-section .nav-link.active.tab-iocn-2::before,
-.devTeam-section .collapse-anchor.tab-iocn-2::before {
-  background-position: -3px -137px;
-}
-.devTeam-section .tab-iocn-3::before,
-.devTeam-section .collapsed.collapse-anchor.tab-iocn-3::before {
-  background-position: -37px -101px;
-  width: 30px;
-  height: 28px;
-}
-.devTeam-section .nav-link.active.tab-iocn-3::before,
-.devTeam-section .collapse-anchor.tab-iocn-3::before {
-  background-position: -37px -135px;
-}
-.devTeam-section .tab-iocn-4::before,
-.devTeam-section .collapsed.collapse-anchor.tab-iocn-4::before {
-  background-position: -173px -100px;
-  width: 30px;
-  height: 30px;
-}
-.devTeam-section .nav-link.active.tab-iocn-4::before,
-.devTeam-section .collapse-anchor.tab-iocn-4::before {
-  background-position: -173px -134px;
-}
-.devTeam-section .tab-iocn-5::before,
-.devTeam-section .collapsed.collapse-anchor.tab-iocn-5::before {
-  background-position: -106px -100px;
-  width: 29px;
-  height: 33px;
-}
-.devTeam-section .nav-link.active.tab-iocn-5::before,
-.devTeam-section .collapse-anchor.tab-iocn-5::before {
-  background-position: -106px -133px;
-}
-.devTeam-section .tab-iocn-6::before,
-.devTeam-section .collapsed.collapse-anchor.tab-iocn-6::before {
-  background-position: -141px -100px;
-  width: 27px;
-  height: 30px;
-}
-.devTeam-section .nav-link.active.tab-iocn-6::before,
-.devTeam-section .collapse-anchor.tab-iocn-6::before {
-  background-position: -141px -134px;
-}
-
-.whyUS-section a[class^="tab-iocn"]::before,
-.whyUS-section a[class*="tab-iocn"]::before {
-  background-image: url(../img/Sprite_Game-Dev-&-Why-Us.png);
-}
-.whyUS-section .collapse-anchor.tab-iocn-1::before {
-  background-position: -139px -439px;
-  width: 29px;
-  height: 42px;
-}
-.whyUS-section .collapsed.collapse-anchor.tab-iocn-1::before {
-  background-position: -139px -395px;
-}
-.whyUS-section .collapse-anchor.tab-iocn-2::before {
-  background-position: -45px -445px;
-  width: 41px;
-  height: 29px;
-}
-.whyUS-section .collapsed.collapse-anchor.tab-iocn-2::before {
-  background-position: -45px -402px;
-}
-.whyUS-section .collapse-anchor.tab-iocn-3::before {
-  background-position: -92px -442px;
-  width: 35px;
-  height: 35px;
-}
-.whyUS-section .collapsed.collapse-anchor.tab-iocn-3::before {
-  background-position: -92px -399px;
-}
-.whyUS-section .collapse-anchor.tab-iocn-4::before {
-  background-position: -5px -443px;
-  width: 32px;
-  height: 33px;
-}
-.whyUS-section .collapsed.collapse-anchor.tab-iocn-4::before {
-  background-position: -5px -400px;
-}
-.devTeam-section h5 {
-  font-size: 26px;
-  line-height: 36px;
-  color: #333333;
-  font-weight: 700;
-  text-align: center;
-  margin: 40px 0 20px;
-}
+/*DEVTOOLS*/
 .platforms-div {
   border-radius: 10px;
   border: 1px solid #fcddc4;
@@ -857,109 +639,16 @@ header {
 .platform-tool:hover .nodeJs {
   background: url(./img/icons/node2.png);
 }
-
-.footer .container {
+/* FOOTER */
+.footer1 .container1 {
   max-width: 1170px;
   margin: auto;
 }
-.footer .row {
+.footer1 .row1 {
   display: flex;
   flex-wrap: wrap;
 }
-.footer .ul {
-  list-style: none;
-}
-.footer {
-  background-color: #24262b;
-  padding: 70px 0;
-}
-.footer-col {
-  width: 25%;
-  padding: 0 15px;
-}
-.footer-col h4 {
-  font-size: 18px;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-}
-.footer-col h4::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: #6cd6bf;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
-}
-.footer-col ul li a {
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 300;
-  color: #bbbbbb;
-  display: block;
-  transition: all 0.3s ease;
-}
-.footer-col ul li a:hover {
-  color: #ffffff;
-  padding-left: 8px;
-}
-.footer-col .social-links a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover {
-  color: #24262b;
-  background-color: #ffffff;
-}
-
-/*responsive*/
-@media (max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 574px) {
-  .footer-col {
-    width: 100%;
-  }
-}
-
-body {
-  line-height: 1.5;
-  font-family: "Poppins", sans-serif;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.container1 {
-  max-width: 1170px;
-  margin: auto;
-}
-.row1 {
-  display: flex;
-  flex-wrap: wrap;
-}
-ul {
+.footer1 .ul {
   list-style: none;
 }
 .footer1 {
@@ -983,7 +672,7 @@ ul {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: orange;
+  background-color: #6cd6bf;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -1019,18 +708,17 @@ ul {
 }
 .footer-col1 .social-links a:hover {
   color: #24262b;
-  background-color: orange;
+  background-color: #ffffff;
 }
 
-/*responsive*/
 @media (max-width: 767px) {
-  .footer-col1 {
+  .footer-col {
     width: 50%;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 574px) {
-  .footer-col1 {
+  .footer-col {
     width: 100%;
   }
 }
